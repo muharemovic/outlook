@@ -1,6 +1,6 @@
 {
   "name": "outlook-for-linux",
-  "version": "3",
+  "version": "0.0.1",
   "main": "app/index.js",
   "description": "Unofficial Outlook mail for Linux",
   "homepage": "https://github.com/muharemovic/outlook",
