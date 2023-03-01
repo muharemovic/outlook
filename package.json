@@ -13,7 +13,7 @@
     "url": "git+ssh://github.com/muharemovic/outlook"
   },
   "author": {
-    "name": "muharemovic,
+    "name": "muharemovic",
     "email": "muharemovi@gmail.com",
     "url": "https://github.com/muharemovic/"
   },
@@ -84,6 +84,6 @@
         "provider": "github",
         "releaseType": "draft"
       }
-    },
+    }
   }
 }
