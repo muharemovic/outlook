@@ -1,21 +1,21 @@
 {
-  "name": "teams-for-linux",
-  "version": "1.0.49",
+  "name": "outlook-for-linux",
+  "version": "3",
   "main": "app/index.js",
-  "description": "Unofficial client for Microsoft Teams for Linux",
-  "homepage": "https://github.com/IsmaelMartinez/teams-for-linux",
+  "description": "Unofficial Outlook mail for Linux",
+  "homepage": "https://github.com/muharemovic/outlook",
   "keywords": [
-    "Teams",
-    "Microsoft Teams"
+    "Outlook",
+    "Microsoft Outlook"
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/IsmaelMartinez/teams-for-linux"
+    "url": "git+ssh://github.com/muharemovic/outlook"
   },
   "author": {
-    "name": "Ismael Martinez",
-    "email": "ismaelmartinez@gmail.com",
-    "url": "https://github.com/IsmaelMartinez/"
+    "name": "muharemovic,
+    "email": "",
+    "url": "https://github.com/muharemovic/"
   },
   "license": "GPL-3.0-or-later",
   "scripts": {
@@ -54,14 +54,14 @@
     "yarn": "1.22.19"
   },
   "build": {
-    "appId": "teams-for-linux",
+    "appId": "outlook-for-linux",
     "asarUnpack": [
       "node_modules/spellchecker/vendor/hunspell_dictionaries"
     ],
     "protocols": {
-      "name": "msteams",
+      "name": "msoutlook",
       "schemes": [
-        "msteams"
+        "msoutlook"
       ]
     },
     "extraResources": [
@@ -73,18 +73,16 @@
     "linux": {
       "category": "Chat;Network;Office",
       "packageCategory": "net",
-      "executableName": "teams-for-linux",
-      "synopsis": "Teams for Linux",
-      "description": "Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.",
+      "executableName": "outlook",
+      "synopsis": "Outlook for Linux",
+      "description": "Unofficial Microsoft Outlook for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.",
       "desktop": {
-        "Name": "Teams for Linux",
-        "Comment": "Unofficial client for Microsoft Teams for Linux",
-        "StartupWMClass": "teams-for-linux"
+        "Name": "Outlook for Linux",
+        "Comment": "Unofficial Microsoft Outlook for Linux",
+        "StartupWMClass": "outlook"
       },
       "target": [
-        "rpm",
         "deb",
-        "tar.gz",
         "AppImage"
       ],
       "publish": {
@@ -92,13 +90,6 @@
         "releaseType": "draft"
       }
     },
-    "snap": {
-      "summary": "Teams for Linux",
-      "confinement": "strict",
-      "grade": "stable",
-      "environment": {
-        "DISABLE_WAYLAND": 1
-      },
       "plugs": [
         "default",
         "camera",
@@ -106,12 +97,7 @@
         "wayland",
         "upower-observe"
       ],
-      "publish": [
-        "snapStore"
-      ]
+
     },
-    "mac": {
-      "category": "public.app-category.productivity"
-    }
   }
 }
