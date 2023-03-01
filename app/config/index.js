@@ -39,7 +39,7 @@ function argv(configPath) {
 				type: 'boolean',
 			},
 			url: {
-				default: 'https://teams.microsoft.com/',
+				default: 'https://outlook.office365.com/',
 				describe: 'Microsoft Teams URL',
 				type: 'string',
 			},
