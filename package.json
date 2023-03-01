@@ -14,7 +14,7 @@
   },
   "author": {
     "name": "muharemovic,
-    "email": "",
+    "email": "muharemovi@gmail.com",
     "url": "https://github.com/muharemovic/"
   },
   "license": "GPL-3.0-or-later",
@@ -84,15 +84,6 @@
         "provider": "github",
         "releaseType": "draft"
       }
-    },
-      "plugs": [
-        "default",
-        "camera",
-        "screen-inhibit-control",
-        "wayland",
-        "upower-observe"
-      ],
-
     },
   }
 }
