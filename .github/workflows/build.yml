@@ -29,24 +29,6 @@ jobs:
         if: contains(github.ref, 'develop')
         run: yarn dist:linux:deb -- --publish always
 
-  rpm:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v2
-
-      - name: Install Node.js, NPM and Yarn
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16
-
-      - name: Build
-        run: yarn --link-duplicates --pure-lockfile
-
-      - name: Release
-        if: contains(github.ref, 'develop')
-        run: yarn dist:linux:rpm -- --publish always
 
   appimage:
     runs-on: ubuntu-latest
@@ -67,40 +49,5 @@ jobs:
         if: contains(github.ref, 'develop')
         run: yarn dist:linux:appimage -- --publish always
 
-  targz:
-    runs-on: ubuntu-latest
 
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v2
 
-      - name: Install Node.js, NPM and Yarn
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16
-
-      - name: Build
-        run: yarn --link-duplicates --pure-lockfile
-
-      - name: Release
-        if: contains(github.ref, 'develop')
-        run: yarn dist:linux:targz -- --publish always
-
-  dmg:
-    runs-on: macos-latest
-
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v2
-
-      - name: Install Node.js, NPM and Yarn
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16
-
-      - name: Build
-        run: yarn --link-duplicates --pure-lockfile
-
-      - name: Release
-        if: contains(github.ref, 'develop')
-        run: yarn dist:mac -- --publish always
