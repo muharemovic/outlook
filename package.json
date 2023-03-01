@@ -1,5 +1,5 @@
 {
-  "name": "outlook-for-linux",
+  "name": "outlook",
   "version": "0.0.1",
   "main": "app/index.js",
   "description": "Unofficial Outlook mail for Linux",
@@ -49,7 +49,7 @@
     "yarn": "1.22.19"
   },
   "build": {
-    "appId": "outlook-for-linux",
+    "appId": "outlook",
     "asarUnpack": [
       "node_modules/spellchecker/vendor/hunspell_dictionaries"
     ],
