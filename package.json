@@ -1,6 +1,6 @@
 {
   "name": "outlook-for-linux",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "main": "app/index.js",
   "description": "Unofficial client for Microsoft Outlook for Linux",
   "homepage": "https://github.com/muharemovic/outlook",
@@ -73,11 +73,11 @@
     "linux": {
       "category": "Chat;Network;Office",
       "packageCategory": "net",
-      "executableName": "outlook-for-linux",
-      "synopsis": "Outlook",
+      "executableName": "teams-for-linux",
+      "synopsis": "Teams for Linux",
       "description": "Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.",
       "desktop": {
-        "Name": "Outlook",
+        "Name": "Teams for Linux",
         "Comment": "Unofficial client for Microsoft Teams for Linux",
         "StartupWMClass": "teams-for-linux"
       },
