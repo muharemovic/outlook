@@ -59,9 +59,9 @@
       "node_modules/spellchecker/vendor/hunspell_dictionaries"
     ],
     "protocols": {
-      "name": "msteams",
+      "name": "outlook",
       "schemes": [
-        "msteams"
+        "outlook"
       ]
     },
     "extraResources": [
@@ -73,13 +73,13 @@
     "linux": {
       "category": "Chat;Network;Office",
       "packageCategory": "net",
-      "executableName": "teams-for-linux",
-      "synopsis": "Teams for Linux",
-      "description": "Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.",
+      "executableName": "outlook",
+      "synopsis": "Outlook for Linux",
+      "description": "Unofficial Outlook client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.",
       "desktop": {
-        "Name": "Teams for Linux",
-        "Comment": "Unofficial client for Microsoft Teams for Linux",
-        "StartupWMClass": "teams-for-linux"
+        "Name": "Outlook for Linux",
+        "Comment": "Outlook for Linux",
+        "StartupWMClass": "Outlook"
       },
       "target": [
         "rpm",
